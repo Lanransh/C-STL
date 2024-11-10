@@ -56,3 +56,18 @@ struct iterator_traits <T const*> {
 template<typename Iterator> inline
 typename iterator_traits<Iterator>::difference_tpye
 iterator_category(Iterator const&);
+
+template<typename Iterator> inline
+typename iterator_traits<Iterator>::diffeence_type
+distance_type(Iterator const&);
+
+template <typename Iterator> inline
+typename iterator_traits<Iterator>::value_type
+iterator_value_type(Iterator const&);
+
+template<typename InputIterator> inline
+typename iterator_traits<InputIterator>:: difference_type
+__distance_aux(InputIterator first, InputIterator last, input_iterator_tag)
+{
+
+}
